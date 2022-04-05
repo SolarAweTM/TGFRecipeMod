@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IL0NuxV6z/Y4Kt/MKTQe2bVASjABRAGQDD1NRajPb0i7pfjaumNW+8kADK0u6+DluW/FWyjjjyDiq4csyn2lsg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\test1\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\TGFRecipeMod\\TGFRecipeMod.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\test1\\.nuget\\packages\\tmodloader.codeassist\\0.1.3\\tmodloader.codeassist.0.1.3.nupkg.sha512"
+  ],
+  "logs": []
+}
