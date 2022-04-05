@@ -1,0 +1,8 @@
+This is a very basic mod for a very specific server. It adds and removes certain recipes.
+Those recipes are:
+
+- Most Calamity shrine items
+- Murasama, Terminus, and the Dragon Scales
+- Removed recipes for Item Frame and Weapon Rack
+
+I wouldn't recommend using this unless you need these EXACT changes.

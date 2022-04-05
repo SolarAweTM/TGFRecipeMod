@@ -1,0 +1,7 @@
+displayName = Calamity Server Recipes
+author = SolarAweTM
+version = 1.0
+modReferences = CalamityMod
+sortAfter = CalamityMod
+includeSource = true
+includePDB = true
