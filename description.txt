@@ -6,3 +6,10 @@ Those recipes are:
 - Removed recipes for Item Frame and Weapon Rack
 
 I wouldn't recommend using this unless you need these EXACT changes.
+
+v1.1 Changes:
+- Added mod icon
+
+v1.2 Changes:
+- Spooky Wings now require 50 Spooky Wood
+- Tattered Fairy Wings now require 5 Ectoplasm

@@ -1,6 +1,6 @@
 displayName = Calamity Server Recipes
 author = SolarAweTM
-version = 1.0
+version = 1.2
 modReferences = CalamityMod
 sortAfter = CalamityMod
 includeSource = true

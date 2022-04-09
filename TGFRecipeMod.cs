@@ -78,12 +78,14 @@ namespace TGFRecipeMod
 			recipe.SetResult(Calamity.ItemType("DragonScales"));
 			recipe.AddRecipe();
 
-			/*RECIPE REMOVALS
+			/*RECIPE REMOVALS AND EDITS
 			 * - Item Frame
 			 * - Weapon Rack
+			 * - Spooky Wings now require Spooky Wood
+			 * - Tattered Fairy Wings now require Ectoplasm (this and spooky wings are meant to balance out imkSushi's Mod)
 			 */
 
-			RecipeFinder finder = new RecipeFinder();
+			RecipeFinder finder = new RecipeFinder(); //Removes Item Frames
 			finder.AddRecipeGroup("Wood", 6);
 			finder.AddTile(TileID.Sawmill);
 			finder.SetResult(3270);
@@ -91,13 +93,31 @@ namespace TGFRecipeMod
 			RecipeEditor editor = new RecipeEditor(recipe2);
 			editor.DeleteRecipe();
 
-			finder = new RecipeFinder();
+			finder = new RecipeFinder(); //Removes Weapon Racks
 			finder.AddRecipeGroup("Wood", 10);
 			finder.AddTile(TileID.Sawmill);
 			finder.SetResult(2699);
             recipe2 = finder.FindExactRecipe();
 			editor = new RecipeEditor(recipe2);
 			editor.DeleteRecipe();
+
+			finder = new RecipeFinder(); //Adjusts Spooky Wings
+			finder.AddIngredient(1831);
+			finder.AddIngredient(575, 20);
+			finder.AddTile(TileID.MythrilAnvil);
+			finder.SetResult(1830);
+			recipe2 = finder.FindExactRecipe();
+			editor = new RecipeEditor(recipe2);
+			editor.AddIngredient(1729, 50);
+
+			finder = new RecipeFinder(); //Adjusts Tattered Fairy Wings
+			finder.AddIngredient(1811);
+			finder.AddIngredient(575, 20);
+			finder.AddTile(TileID.MythrilAnvil);
+			finder.SetResult(1797);
+			recipe2 = finder.FindExactRecipe();
+			editor = new RecipeEditor(recipe2);
+			editor.AddIngredient(1508, 5);
 		}
 	}
 }
