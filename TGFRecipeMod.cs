@@ -78,6 +78,13 @@ namespace TGFRecipeMod
 			recipe.SetResult(Calamity.ItemType("DragonScales"));
 			recipe.AddRecipe();
 
+			recipe = new ModRecipe(this); // 500 Sandstone and 1 Amidias' Spark @ Furnace -> Luxor's Gift
+			recipe.AddIngredient(3271, 500);
+			recipe.AddIngredient(Calamity.ItemType("AmidiasSpark"));
+			recipe.AddTile(17);
+			recipe.SetResult(Calamity.ItemType("LuxorsGift"));
+			recipe.AddRecipe();
+
 			/*RECIPE REMOVALS AND EDITS
 			 * - Item Frame
 			 * - Weapon Rack
