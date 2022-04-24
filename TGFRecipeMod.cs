@@ -85,6 +85,23 @@ namespace TGFRecipeMod
 			recipe.SetResult(Calamity.ItemType("LuxorsGift"));
 			recipe.AddRecipe();
 
+			Mod Catalyst = ModLoader.GetMod("CatalystMod");
+			recipe = new ModRecipe(this); // 25 Stardust, 5 Astral Bars, 10 Meteorite Bars, 3 Metanova Bars (if Catalyst is enabled) @ Astral Transmogrifier with Catalyst, Monolith Amalgam if without -> Heavenfallen Stardisk
+			recipe.AddIngredient(Calamity.ItemType("Stardust"), 25);
+			recipe.AddIngredient(Calamity.ItemType("AstralBar"), 5);
+			recipe.AddIngredient(117, 10);
+			if (Catalyst != null)
+			{
+				recipe.AddIngredient(Catalyst.ItemType("MetanovaBar"), 3);
+				recipe.AddTile(Catalyst.TileType("AstralTransmogrifier"));
+			}
+			else
+			{
+				recipe.AddTile(Calamity.TileType("MonolithCrafting"));
+			}
+			recipe.SetResult(Calamity.ItemType("HeavenfallenStardisk"));
+			recipe.AddRecipe(); //wow i forgot to add this after debugging for 10min
+
 			/*RECIPE REMOVALS AND EDITS
 			 * - Item Frame
 			 * - Weapon Rack

@@ -7,9 +7,18 @@ Those recipes are:
 
 I wouldn't recommend using this unless you need these EXACT changes.
 
-v1.1 Changes:
-- Added mod icon
+v1.2.2 Changes:
+- Added recipe for Heavenfallen Stardisk
+  - Recipe changes based on if you have the Catalyst Mod enabled or not
+  - Catalyst is NOT required
+- Homepage link goes to source code
+
+v1.2.1 Changes:
+- Added recipe for Luxor's Gift
 
 v1.2 Changes:
 - Spooky Wings now require 50 Spooky Wood
 - Tattered Fairy Wings now require 5 Ectoplasm
+
+v1.1 Changes:
+- Added mod icon
