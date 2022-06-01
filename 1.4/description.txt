@@ -1,0 +1,44 @@
+This is a very basic mod that adds recipes I feel make the multiplayer crafting experience easier.
+The mod can be used in singleplayer, and I also recommend that.
+Those recipes are:
+
+- Some unique Calamity items
+- Bulk ore smelting for vanilla, Calamity, and Vitality
+
+This does have integration with Calamity, but Calamity is still being ported to 1.4.
+
+v1.4 Changes (tMod 1.4 only):
+- Ported to 1.4
+- Added Vitality integration for bulk recipes
+- Removed recipe removals and edits as they are no longer needed
+- Removed Catalyst integration
+- Adjusted bulk ore smelting for 1.4 numbers
+
+v1.3.2 Changes:
+- Added the rest of bulk crafting bars
+- Calamity:
+  - Added bulk crafting for all bars and cores
+
+v1.3.1 Changes:
+- Fixed bulk crafting recipes
+
+v1.3 Changes:
+- Added bulk recipes for pre-hardmode bars
+- Mod no longer requires Calamity, all recipes are intact
+- Updated mod name
+
+v1.2.2 Changes:
+- Added recipe for Heavenfallen Stardisk
+  - Recipe changes based on if you have the Catalyst Mod enabled or not
+  - Catalyst is NOT required
+- Homepage link goes to source code
+
+v1.2.1 Changes:
+- Added recipe for Luxor's Gift
+
+v1.2 Changes:
+- Spooky Wings now require 50 Spooky Wood
+- Tattered Fairy Wings now require 5 Ectoplasm
+
+v1.1 Changes:
+- Added mod icon
