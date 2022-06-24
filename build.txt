@@ -1,7 +1,7 @@
 displayName = Multiplayer Recipes
 author = SolarAweTM
-version = 1.3.2
+version = 1.4.2
 homepage = https://github.com/SolarAweTM/TGFRecipeMod
-sortAfter = CalamityMod, CatalystMod
+sortAfter = CalamityMod, CatalystMod, VitalityMod
 includeSource = true
 includePDB = true
