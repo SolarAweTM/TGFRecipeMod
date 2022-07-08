@@ -74,21 +74,11 @@ namespace TGFRecipeMod
 				.AddTile(17)
 				.Register();
 
-				Recipe.Create(Calamity.Find<ModItem>("HeavenfallenStardisk").Type) // 25 Stardust, 5 Astral Bars, 10 Meteorite Bars, 3 Metanova Bars (if Catalyst is enabled) @ Astral Transmogrifier with Catalyst, Monolith Amalgam if without -> Heavenfallen Stardisk
+				Recipe.Create(Calamity.Find<ModItem>("HeavenfallenStardisk").Type) // 25 Stardust, 5 Astral Bars, 10 Meteorite Bars @ Monolith Amalgam -> Heavenfallen Stardisk
 				.AddIngredient(Calamity.Find<ModItem>("Stardust").Type, 25)
 				.AddIngredient(Calamity.Find<ModItem>("AstralBar").Type, 5)
 				.AddIngredient(117, 10)
-				/* might completely nuke catalyst from this
-				if (ModLoader.TryGetMod("CatalystMod", out var Catalyst))
-				{
-					.AddIngredient(Catalyst.Find<ModItem>("MetanovaBar").Type, 3)
-					.AddTile(Catalyst.Find<ModTile>("AstralTransmogrifier").Type)
-				}
-				else
-				{
-					.AddTile(Calamity.Find<ModTile>("MonolithCrafting").Type)
-				}
-				*/
+				.AddTile(Calamity.Find<ModTile>("MonolithCrafting").Type)
 				.Register();
 
 				Recipe.Create(Calamity.Find<ModItem>("AerialiteBar").Type, 10) //Aerialite Bar x10
@@ -250,55 +240,9 @@ namespace TGFRecipeMod
 				.Register();
 			}
 
-			/*RECIPE REMOVALS/EDITS/ADDITIONS
-			 * - Item Frame (TODO)
-			 * - Weapon Rack (TODO)
-			 * - Spooky Wings now require Spooky Wood (TODO)
-			 * - Tattered Fairy Wings now require Ectoplasm (TODO)
-			 * - Bulk recipes for a lot of stuff
-			 */
-
-			/* COMMENTED OUT FOR 1.4 TESTING
-			RecipeFinder finder = new RecipeFinder(); //Removes Item Frames
-			finder.AddRecipeGroup("Wood", 6);
-			finder.AddTile(TileID.Sawmill);
-			finder.SetResult(3270);
-			Recipe recipe2 = finder.FindExactRecipe();
-			RecipeEditor editor = new RecipeEditor(recipe2);
-			editor.DeleteRecipe();
-
-			finder = new RecipeFinder(); //Removes Weapon Racks
-			finder.AddRecipeGroup("Wood", 10);
-			finder.AddTile(TileID.Sawmill);
-			finder.SetResult(2699);
-            recipe2 = finder.FindExactRecipe();
-			editor = new RecipeEditor(recipe2);
-			editor.DeleteRecipe();
-
-			finder = new RecipeFinder(); //Adjusts Spooky Wings
-			finder.AddIngredient(1831);
-			finder.AddIngredient(575, 20);
-			finder.AddTile(TileID.MythrilAnvil);
-			finder.SetResult(1830);
-			recipe2 = finder.FindExactRecipe();
-			editor = new RecipeEditor(recipe2);
-			editor.AddIngredient(1729, 50);
-
-			finder = new RecipeFinder(); //Adjusts Tattered Fairy Wings
-			finder.AddIngredient(1811);
-			finder.AddIngredient(575, 20);
-			finder.AddTile(TileID.MythrilAnvil);
-			finder.SetResult(1797);
-			recipe2 = finder.FindExactRecipe();
-			editor = new RecipeEditor(recipe2);
-			editor.AddIngredient(1508, 5);
-			*/
-
-
 			Recipe.Create(20, 10) //Copper Bar craft x10
 			.AddIngredient(12, 30)
 			.AddTile(17)
-			//.SetResult(20, 10)
 			.Register();
 
 			Recipe.Create(703,10) //Tin Bar x10
